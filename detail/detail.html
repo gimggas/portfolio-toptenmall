@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detail</title>
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script defer src="detail.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="fixed">
+        <div class="headerWrap">
+            <header class="header">
+                <div class="header_top">
+                    <ul class="header-brand">
+                        <li class="header-brand_item"><a href="#">ZIOZIA</a></li>
+                        <li class="header-brand_item"><a href="#">AND Z</a></li>
+                        <li class="header-brand_item"><a href="#">OLZEN</a></li>
+                        <li class="header-brand_item"><a href="#">EDITION</a></li>
+                        <li class="header-brand_item"><a href="#">TOPTEN10</a></li>
+                        <li class="header-brand_item"><a href="#">POLHAM</a></li>
+                        <li class="header-brand_item"><a href="#">PROJECT M</a></li>
+                        <li class="header-brand_item"><a href="#">TMAKER</a></li>
+                        <li class="header-brand_item"><a href="#">TOPTEN KIDS</a></li>
+                        <li class="header-brand_item"><a href="#">POLHAM KIDS</a></li>
+                    </ul>
+                    <nav class="gnb">
+                        <ul class="gnb-util">
+                            <li class="gnb-util_item"><a href="../login/login.html">LOGIN</a></li>
+                            <li class="gnb-util_item"><a href="#">KART</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header_middle">
+                    <div class="logo">
+                        <a href="../index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="search">
+                    <!-- <div class="search_box">
+                        <i class="xi-search"></i>
+                    </div> -->
+                    <input type="text" class="color_name" placeholder="검색어를 입력하세요.">
+
+                    <button type="button" class="btn">
+                        <i class="xi-search"></i>
+                    </button>
+                </div>
+                <nav class="lnb">
+                    <!-- nav : 메뉴, 목차, 인덱스-->
+                    <ul>
+                        <li><a href="#">남성</a>
+                            <!-- #! = 링크실행X -->
+                            <ul>
+                                <li><a href="detail.html">상의</a></li>
+                                <li><a href="#"> 하의</a></li>
+                                <li><a href="#"> 정장</a></li>
+                                <li><a href="#"> 셋업</a></li>
+                                <li><a href="#"> 아우터</a></li>
+                                <li><a href="#"> 이너웨어</a></li>
+                                <li><a href="#"> 악세서리</a></li>
+                            </ul>
+                        </li>
+                        <!-- meunu01 -->
+                        <li><a href="#">여성</a>
+                            <ul>
+                                <li><a href="#"> 상의</a></li>
+                                <li><a href="#"> 하의</a></li>
+                                <li><a href="#"> 원피스</a></li>
+                                <li><a href="#"> 아우터</a></li>
+                                <li><a href="#"> 이너웨어</a></li>
+                                <li><a href="#"> 악세서리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">아동</a>
+                            <ul>
+                                <li><a href="#"> 남아</a></li>
+                                <li><a href="#"> 여아</a></li>
+                                <li><a href="#"> 악세서리</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">아울렛</a>
+                            <ul>
+                                <li><a href="#"> 남성</a></li>
+                                <li><a href="#"> 여성</a></li>
+                                <li><a href="#"> 아동</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">매거진</a>
+                            <ul>
+                                <li><a href="#"> 스토리즈</a></li>
+                                <li><a href="#"> 스타일</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">기획전</a>
+
+                        </li>
+                        <li><a href="#">이벤트</a>
+
+                        </li>
+                        <li><a href="#">베스트 리뷰</a>
+
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+    <div class="search_detail_container">
+        <div class="search_detail">
+            <div class="recent_search">
+                <div class="title">최근 검색어</div>
+
+                <div class="color_list">
+                </div>
+            </div>
+            <div class="popular_search">
+                <div class="title">인기 검색어</div>
+                <ol>
+                    <li><a href="#">원피스</a></li>
+                    <li><a href="#">BALANCE</a></li>
+                    <li><a href="#">래쉬가드</a></li>
+                    <li><a href="#">반바지</a></li>
+                    <li><a href="#">반팔티</a></li>
+                    <li><a href="#">쿨에어</a></li>
+                    <li><a href="#">린넨</a></li>
+                    <li><a href="#">바람막이</a></li>
+                    <li><a href="#">오버핏</a></li>
+                </ol>
+            </div>
+
+            <div class="recently_viewed">
+                <div class="title">최근 본 상품</div>
+            </div>
+
+            <div class="closeBtn">
+                <i class="xi-close"></i>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="product_detail">
+        <section class="product_detail_left">
+            <div class="detail_slider">
+                <div class="back_btn">
+                    <a href="../sub/sub.html">
+                        <i class="xi-angle-left"></i>
+                        <span>LIST</span>
+                    </a>
+                </div>
+                <ul class="product_list">
+                    <li>
+                        <img src="img/product_img.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/product_list01.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/product_list02.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/product_list03.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/product_list04.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/product_list06.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/product_list07.jpg" alt="">
+                    </li>
+                </ul>
+                <div class="product_img">
+                    <img src="img/product_img.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="product_detail_right">
+            <div class="price_info">
+                <div class="title">
+                    <p>
+                        <strong>TOPTEN10</strong>
+                        / MSB5TS3003WWB
+                    </p>
+                    <h2>공용) 3PACK</h2>
+                </div>
+                <div class="price_info_detail">
+                    <ul>
+                        <li>
+                            <strong>정상가</strong>
+                            <span><del>19,900 원</del></span>
+                        </li>
+                        <li>
+                            <strong>판매가</strong>
+                            <span><del>15,900 원</del></span>
+                        </li>
+                        <li>
+                            <strong>특판가</strong>
+                            <span class="selling_price">7,900원 &nbsp </span>
+                            <span class="sale">(60% OFF)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="option_info">
+                <li class="color">
+                    <strong>컬러</strong>
+                    <div>
+                        <a href="#">
+                            <img src="img/option_info_color.jpg" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li class="size">
+                    <strong>사이즈</strong>
+                    <ul>
+                        <li>
+                            90
+                        </li>
+                        <li>95</li>
+                        <li>100</li>
+                        <li>105</li>
+                        <li>110</li>
+                        <li>115</li>
+                    </ul>
+                </li>
+                <li class="quantity">
+                    <strong>수량</strong>
+                    <button type="button" class="minus">-</button>
+                    <div id='result'>1</div>
+                    <button type="button" class="plus">+</button>
+                </li>
+            </div>
+            <div class="total_price">
+                <strong>총 합계</strong>
+                <input type="text" id="total" value="7900">
+                <span>원</span>
+            </div>
+            <div class="btn_group">
+                <a href="#">
+                    <button type="button" name="button" class="btn_cart">장바구니</button>
+                </a>
+                <a href="#">
+                    <button type="button" name="button" class="btn_checkout">바로구매</button>
+                </a>
+                <a href="#">
+                    <button type="button" name="button" class="btn_favorite">
+                        <i class="xi-heart-o"></i>
+                    </button>
+                </a>
+            </div>
+            <div class="addBenefit">
+                <div class="title">추가혜택</div>
+                <a href="#">
+                    <div class="minibanner01">
+                        <div class="minibanner01_left">
+                            숨겨진 미션 참여하면
+                        </div>
+                        <div class="minibanner01_right">
+                            ~20,000P >
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="minibanner02">
+                        <div class="minibanner02_left">
+                            신규 가입 이벤트
+                        </div>
+                        <div class="minibanner02_right">
+                            10,000원 쿠폰! >
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <table class="add_info">
+                <tbody>
+                    <tr>
+                        <td>배송비</td>
+                        <td>3000원
+                            (39,900원 이상 무료)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>포인트</td>
+                        <td>118&nbsp;P 적립예정
+                        </td>
+                        <td>
+                            <button type="button" class="open_point">
+                                <a href="#">
+                                    포인트안내
+                                </a>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>무이자 할부</td>
+                        <td>최대 6개월 무이자 할부
+                        </td>
+                        <td>
+                            <button type="button" class="open_point">
+                                <a href="#">
+                                    카드사안내
+                                </a>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+
+
+
+
+    <div class="contents_wrap">
+        <div class="contents_inner">
+            <p class="notice">
+                <img src="img/notice.avif" alt="">
+            </p>
+
+
+            <div class="detailed">
+                <div class="contents">
+                    <p class="contents01">
+                        <img src="img/contents01.jpg" alt="">
+                    </p>
+                    <p class="contents02">
+                        <img src="img/contents02.jpg" alt="">
+                    </p>
+                    <p class="contents03">
+                        <img src="img/contents03.jpg" alt="">
+                    </p>
+                    <p class="contents04">
+                        <img src="img/contents04.jpg" alt="">
+                    </p>
+                    <p class="contents05">
+                        <img src="img/contents05.jpg" alt="">
+                    </p>
+                </div>
+                <p class="model_info">
+                    <img src="img/model_info.avif" alt="">
+                </p>
+
+
+                <div class="section_info">
+                    <div class="title">상품정보</div>
+                    <table class="tal">
+                        <colgroup>
+                            <col width="170px">
+                            <col width="*">
+                        </colgroup>
+
+                        <tbody>
+                            <tr>
+                                <th>품목</th>
+                                <td>의류</td>
+                            </tr>
+                            <tr>
+                                <th>소재</th>
+                                <td>면100%</td>
+                            </tr>
+                            <tr>
+                                <th>색상</th>
+                                <td>WWB</td>
+                            </tr>
+                            <tr>
+                                <th>치수</th>
+                                <td>90,95,100,105,110,115</td>
+                            </tr>
+                            <tr>
+                                <th>제조사(수입자)</th>
+                                <td>신성동상(주)</td>
+                            </tr>
+                            <tr>
+                                <th>제조국</th>
+                                <td>인도네시아</td>
+                            </tr>
+                            <tr>
+                                <th>세탁방법<br>
+                                    취급주의사항</th>
+                                <td>케어라벨 참조</td>
+                            </tr>
+                            <tr>
+                                <th>제조연월</th>
+                                <td>202105</td>
+                            </tr>
+                            <tr>
+                                <th>품질보증기준</th>
+                                <td>관련법 및 소비자분쟁해결 규정에 따름</td>
+                            </tr>
+                            <tr>
+                                <th>A/S문의</th>
+                                <td>-상담업무시간 : 9:30~17:30 (점심시간: 12:30~13:30) / (토/일 공휴일 휴무)<br>
+                                    -상품,주문 및 배송문의 : 1600-3424</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="size_detail">
+                    <div class="title">
+                        사이즈
+                    </div>
+                    <table class="size_detail_graph">
+                        <thead>
+                            <tr>
+                                <th>사이즈</th>
+                                <th>어깨너비</th>
+                                <th>가슴둘레</th>
+                                <th>밑단둘레</th>
+                                <th>소매길이</th>
+                                <th>화장</th>
+                                <th>총길이</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="bold">90</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">95</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">100</td>
+                                <td>46</td>
+                                <td>102</td>
+                                <td>102</td>
+                                <td>22</td>
+                                <td>-</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">105</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">110</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">115</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="table_caption">
+                        <p>
+                            사이즈는 측정 방법과 생산 과정에 따라 약간의 오차가 발생할 수 있습니다.
+                        </p>
+                        <p class="unit">단위(cm)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="desc">
+                <div class="detailed_description">상세정보 더보기
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footerWrap">
+        <footer class="footer">
+            <div class="footer_top">
+                <ul>
+                    <li><a href="#">매장안내</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li class="bold"><a href="#">개인정보처리방침</a></li>
+                </ul>
+                <select name="add_name" id="add_name">
+                    <option value="">---포털 사이트---</option>
+                    <option value="http://www.naver.com">네이버</option>
+                    <option value="http://www.daum.net">다음</option>
+                    <option value="http://www.nate.com">네이트</option>
+                    <option value="http://www.google.co.kr">구글</option>
+                </select>
+
+            </div>
+            <div class="footer_bottom">
+                <div class="footer_bottom_left">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+
+                    <div class="footer_col">
+                        <div class="footer_col_01">
+                            <div class="footer_col_01_top">
+                                신성통상(주) / 대표자 : 황대규<br>
+                                주소 : 서울 강동구 풍성로63길 84 신성빌딩 / 대표전화 : 1600 - 3424<br>
+                                통신판매업 신고번호 : 2015-서울강동-1890
+                            </div>
+                            <div class="footer_col_01_bottom">
+                                © 2018 TOPTEN MALL. ALL RIGHTS RESERVED
+                            </div>
+                        </div>
+                        <div class="footer_col_02">
+                            <div class="footer_col_02_top">
+                                <span>사업자등록번호 104-81-01106</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="#">사업자 정보확인</a>
+                            </div>
+                            <div class="footer_col_02_bottom">
+                                <img src="../img/btn_usafe.png" alt="">
+                                채무지급보증안내
+                                <a href="#">서비스가입사실확인</a>
+                            </div>
+                            <dl class="sns">
+                                <dd class="facebook">
+                                    <a href="http://www.facebook.com">FACEBOOK</a>
+                                </dd>
+                                <dd class="instagram">
+                                    <a href="http://www.instagram.com">INSTAGRAM</a>
+                                </dd>
+                                <dd class="youtube">
+                                    <a href="http://www.youtube.com">YOUTUBE</a>
+                                </dd>
+
+                            </dl>
+                        </div>
+
+                        <div class="footer_col_03">
+                            <p>상담업무시간 | 전화상담 : 10:00~17:30 / 전화상담 외 : 09:00 ~ 17:30<br>
+                                점심시간 : 12:00~13:00 (주말 및 공휴일 휴무)<br>
+                                물류반품 주소 : 경기 양주시 평화로 1837 탑텐몰 덕정물류센터 3층 반품검수팀<br>
+                                E-mail 주소 : topten10mallcs@ssts.co.kr<br>
+                                Fax 번호 : 070-5176-8407</p]>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </div>
+</body>
+
+</html>
