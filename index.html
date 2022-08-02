@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script defer src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<!-- gsap cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+
+<!-- SWIPER cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.css">
+
+
+<body>
+    <div class="fixed">
+        <div class="headerWrap">
+            <header class="header">
+                <div class="header_top">
+                    <ul class="header-brand">
+                        <li class="header-brand_item"><a href="#">ZIOZIA</a></li>
+                        <li class="header-brand_item"><a href="#">AND Z</a></li>
+                        <li class="header-brand_item"><a href="#">OLZEN</a></li>
+                        <li class="header-brand_item"><a href="#">EDITION</a></li>
+                        <li class="header-brand_item"><a href="#">TOPTEN10</a></li>
+                        <li class="header-brand_item"><a href="#">POLHAM</a></li>
+                        <li class="header-brand_item"><a href="#">PROJECT M</a></li>
+                        <li class="header-brand_item"><a href="#">TMAKER</a></li>
+                        <li class="header-brand_item"><a href="#">TOPTEN KIDS</a></li>
+                        <li class="header-brand_item"><a href="#">POLHAM KIDS</a></li>
+                    </ul>
+                    <nav class="gnb">
+                        <ul class="gnb-util">
+                            <li class="gnb-util_item"><a href="./login/login.html">LOGIN</a></li>
+                            <li class="gnb-util_item"><a href="#">KART</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header_middle">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="search">
+                    <!-- <div class="search_box">
+                        <i class="xi-search"></i>
+                    </div> -->
+                    <input type="text" class="color_name" placeholder="검색어를 입력하세요.">
+
+                    <button type="button" class="btn">
+                        <i class="xi-search"></i>
+                    </button>
+                </div>
+                <nav class="lnb">
+                    <!-- nav : 메뉴, 목차, 인덱스-->
+                    <ul>
+                        <li><a href="#">남성</a>
+                            <!-- #! = 링크실행X -->
+                            <ul>
+                                <li><a href="detail/detail.html">상의</a></li>
+                                <li><a href="#"> 하의</a></li>
+                                <li><a href="#"> 정장</a></li>
+                                <li><a href="#"> 셋업</a></li>
+                                <li><a href="#"> 아우터</a></li>
+                                <li><a href="#"> 이너웨어</a></li>
+                                <li><a href="#"> 악세서리</a></li>
+                            </ul>
+                        </li>
+                        <!-- meunu01 -->
+                        <li><a href="#">여성</a>
+                            <ul>
+                                <li><a href="#"> 상의</a></li>
+                                <li><a href="#"> 하의</a></li>
+                                <li><a href="#"> 원피스</a></li>
+                                <li><a href="#"> 아우터</a></li>
+                                <li><a href="#"> 이너웨어</a></li>
+                                <li><a href="#"> 악세서리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">아동</a>
+                            <ul>
+                                <li><a href="#"> 남아</a></li>
+                                <li><a href="#"> 여아</a></li>
+                                <li><a href="#"> 악세서리</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">아울렛</a>
+                            <ul>
+                                <li><a href="#"> 남성</a></li>
+                                <li><a href="#"> 여성</a></li>
+                                <li><a href="#"> 아동</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">매거진</a>
+                            <ul>
+                                <li><a href="#"> 스토리즈</a></li>
+                                <li><a href="#"> 스타일</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">기획전</a>
+
+                        </li>
+                        <li><a href="#">이벤트</a>
+
+                        </li>
+                        <li><a href="#">베스트 리뷰</a>
+
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+    <div class="search_detail_container">
+        <div class="search_detail">
+            <div class="recent_search">
+                <div class="title">최근 검색어</div>
+
+                <div class="color_list">
+                </div>
+            </div>
+            <div class="popular_search">
+                <div class="title">인기 검색어</div>
+                <ol>
+                    <li><a href="#">원피스</a></li>
+                    <li><a href="#">BALANCE</a></li>
+                    <li><a href="#">래쉬가드</a></li>
+                    <li><a href="#">반바지</a></li>
+                    <li><a href="#">반팔티</a></li>
+                    <li><a href="#">쿨에어</a></li>
+                    <li><a href="#">린넨</a></li>
+                    <li><a href="#">바람막이</a></li>
+                    <li><a href="#">오버핏</a></li>
+                </ol>
+            </div>
+
+            <div class="recently_viewed">
+                <div class="title">최근 본 상품</div>
+            </div>
+
+            <div class="closeBtn">
+                <i class="xi-close"></i>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="main_banner">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/main_banner01.jpg" alt="">
+                    <div class="txt">
+                        <h1>탑텐 X 탑텐키즈</h1>
+                        <h2>TOP SALE</h2>
+                        <h3>2022.06.24 - 2022.07.14</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="img/main_banner02.jpg" alt="">
+                    <div class="txt">
+                        <h1>앤드지 X 지오지아 X 에디션</h1>
+                        <h2>Don't worry 비(雨) happy!</h2>
+                        <h3>
+                            "APP전용 10% 쿠폰"
+                            <br>
+                            <br>
+                            "2022.06.24 - 2022.07.07"
+
+                        </h3>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="img/main_banner03.jpg" alt="">
+                    <div class="txt">
+                        <h1>Let's Play</h1>
+                        <h2>더 투어 자랑대회</h2>
+                        <h3>온 가족 함께 입고 자랑하기</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="img/main_banner04.jpg" alt="">
+                    <div class="txt">
+                        <h1>탑텐키즈X폴햄키즈y</h1>
+                        <h2>우리 아이가 달라졌어요</h2>
+                        <h3>
+                            "APP전용 10% 쿠폰"
+                            <br>
+                            <br>
+                            "2022.07.08 - 2022.07.14"
+
+                        </h3>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="img/main_banner05.jpg" alt="">
+                    <div class="txt">
+                        <h1>TOPTEN</h1>
+                        <h2>전국민 가심비 티셔츠!</h2>
+                        <h3>오가닉 코튼 티셔츠</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="img/main_banner06.jpg" alt="">
+                    <div class="txt">
+                        <h1>포인트로 완성하는 여름</h1>
+                        <h2>오버핏 그래픽 티셔츠</h2>
+                        <h3>지오지아의 감각은 다르니까</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <section class="sub_page">
+            <div class="sub_page01">
+                <div class="sub_page011">
+                    <div class="sub_page011_img img">
+                        <a href="#">
+                            <img src="img/sub_page011.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="sub_page011_txt txt">
+                        <a href="#">
+                            <div class="txt_inner">
+                                <span>ㅌㅌ#원트</span>
+                                <h3>윈드 브레이커의 질주</h3>
+                                <p>일교차가 심할 뗀, 트렌디한<br>
+                                    윈드 브레이커가 제격</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="sub_page012">
+                    <div class="sub_page012_img img">
+                        <a href="#">
+                            <img src="img/sub_page012.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="sub_page012_txt txt">
+                        <a href="#">
+                            <div class="txt_inner">
+                                <span>탑텐몰 PICK</span>
+                                <h3>봄 코디 필수템!</h3>
+                                <p>4월에 입기 좋은<br>
+                                    활용도 100% 가디건 모음</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="sub_page02">
+                <div class="sub_page021">
+                    <div class="sub_page021_txt txt">
+                        <a href="#">
+                            <div class="txt_inner">
+                                <span>탑텐몰 PICK</span>
+                                <h3>가볍게, 더 가볍게!</h3>
+                                <p>봄기운으로 하루하루가 설레는 요즘<br>
+                                    한결 가벼워진 봄 데일리룩</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sub_page021_img img">
+                        <a href="#">
+                            <img src="img/sub_page021.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="sub_page022">
+                    <div class="sub_page022_txt txt"><a href="#">
+                            <div class="txt_inner">
+                                <span>TOPTEN BABY</span>
+                                <h3>베이비 라인!</h3>
+                                <p>부모님의 마음을 담아 안전한 소재<br>
+                                    편안한 착용감으로 아기의 행복함 만들기!</p>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sub_page022_img img">
+                        <a href="#">
+                            <img src="img/sub_page022.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="main_recomm">
+            <div class="title">
+                <h2>고객님을 위한 추천 상품</h2>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main_recomm_list01 main_recomm_list">
+                            <a href="#">
+                                <div class="main_recomm_list01_img img more hidden">
+                                    <img src="img/main_recomm_list01_hover.jpg" alt="">
+                                </div>
+                                <div class="main_recomm_list01_img img contents">
+                                    <img src="img/main_recomm_list01.jpg" alt="">
+                                </div>
+
+                                <div class="main_recomm_list01_txt txt">
+                                    <div class="brand">TOPTEN10&nbsp&nbsp|&nbsp
+                                        <span>21SS</span>
+                                    </div>
+                                    <div class="text">
+                                        여성) 쿨에어 속바지
+                                    </div>
+                                    <div class="priceinfo">
+                                        <span class="price">3,900</span>
+                                        <span class="sale_price">12,900</span>
+                                        <span class="sale_percent">69%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main_recomm_list02 main_recomm_list">
+                            <a href="#">
+                                <div class="main_recomm_list01_img img more hidden">
+                                    <img src="img/main_recomm_list02_hover.jpg" alt="">
+                                </div>
+                                <div class="main_recomm_list02_img img contents">
+                                    <img src="img/main_recomm_list02.jpg" alt="">
+                                </div>
+                                <div class="main_recomm_list02_txt txt">
+                                    <div class="brand">TOPTEN10 &nbsp&nbsp|&nbsp
+                                        <span>ALL</span>
+                                    </div>
+                                    <div class="text">
+                                        남성) BALANCE 에코쿨링 반팔 티
+                                    </div>
+                                    <div class="priceinfo">
+                                        <span class="price">12,900</span>
+                                        <span class="sale_price">19,900</span>
+                                        <span class="sale_percent">35%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main_recomm_list03 main_recomm_list">
+                            <a href="#">
+                                <div class="main_recomm_list03_img img more hidden">
+                                    <img src="img/main_recomm_list03_hover.jpg" alt="">
+                                </div>
+                                <div class="main_recomm_list03_img img contents">
+                                    <img src="img/main_recomm_list03.jpg" alt="">
+                                </div>
+                                <div class="main_recomm_list03_txt txt">
+                                    <div class="brand">TOPTEN10 &nbsp&nbsp|&nbsp
+                                        <span>22SS</span>
+                                    </div>
+                                    <div class="text">
+                                        남성) 쿨에어 크루넥 반팔 티
+                                    </div>
+                                    <div class="priceinfo">
+                                        <span class="price">8,900</span>
+                                        <span class="sale_price">12,900</span>
+                                        <span class="sale_percent">31%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main_recomm_list04 main_recomm_list">
+                            <a href="#">
+                                <div class="main_recomm_list04_img img more hidden">
+                                    <img src="img/main_recomm_list04_hover.jpg" alt="">
+                                </div>
+                                <div class="main_recomm_list04_img img contents">
+                                    <img src="img/main_recomm_list04.jpg" alt="">
+                                </div>
+                                <div class="main_recomm_list04_txt txt">
+                                    <div class="brand">TOPTEN10 &nbsp&nbsp|&nbsp
+                                        <span>ALL</span>
+                                    </div>
+                                    <div class="text">
+                                        남성) BALANCE 수퍼 스트레치 슬림 팬츠
+                                    </div>
+                                    <div class="priceinfo">
+                                        <span class="price">29,900</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main_recomm_list05 main_recomm_list">
+                            <a href="#">
+                                <div class="main_recomm_list05_img img more hidden">
+                                    <img src="img/main_recomm_list05_hover.jpg" alt="">
+                                </div>
+                                <div class="main_recomm_list05_img img contents">
+                                    <img src="img/main_recomm_list05.jpg" alt="">
+                                </div>
+                                <div class="main_recomm_list05_txt txt">
+                                    <div class="brand">AND Z &nbsp&nbsp|&nbsp 22SS
+                                    </div>
+                                    <div class="text">
+                                        [유니버스] 초코어 콜라보 와펜 반팔티
+                                    </div>
+                                    <div class="priceinfo">
+                                        <span class="price">9,900</span>
+                                        <span class="sale_price">59,900</span>
+                                        <span class="sale_percent">83%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main_recomm_list06 main_recomm_list">
+                            <a href="#">
+                                <div class="main_recomm_list06_img img more hidden">
+                                    <img src="img/main_recomm_list06_hover.jpg" alt="">
+                                </div>
+                                <div class="main_recomm_list06_img img contents">
+                                    <img src="img/main_recomm_list06.jpg" alt="">
+                                </div>
+                                <div class="main_recomm_list06_txt txt">
+                                    <div class="brand">TOPTEN10 &nbsp&nbsp|&nbsp
+                                        <span>21SS</span>
+                                    </div>
+                                    <div class="text">
+                                        공용) 슬럽 크루넥 반팔 티
+                                    </div>
+                                    <div class="priceinfo">
+                                        <span class="price">2,900</span>
+                                        <span class="sale_price">12,900</span>
+                                        <span class="sale_percent">77%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+
+
+        <section class="additional_discount">
+            <div class="title">
+                <h2>혜택에 혜택을 더한, 추가할인 기획전</h2>
+            </div>
+
+            <div class="wrap">
+                <div class="tab_menu">
+                    <ul class="list">
+                        <li class="is_on">
+                            <div class="btn">1 반팔 셔츠
+                                <div id="tab1" class="cont">
+                                    <div class="list01">
+                                        <div class="list011 additional_discount_list">
+                                            <div class="list011_img img box01 box">
+                                                <img src="img/list011_img.jpg" alt="">
+                                                <div class="box01-1 subBox">
+                                                    <span class="brand">PROJECT M</span>
+                                                    <p class="goods">카바나 오픈칼라 반팔 셔츠</p>
+                                                    <span class="price">16,900</span>
+                                                </div>
+                                            </div>
+                                            <div class="list011_txt txt">
+                                                <p class="goods_text">카바나 오픈칼라 반팔 셔츠</p>
+                                                <div class="price_info">
+                                                    <strong class="price">16,900</strong>
+                                                    <del>49,900</del>
+                                                    <strong class="discount">66%</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list012">
+                                            <div class="list012_img img box02 box">
+                                                <img src="img/list012_img.jpg" alt="">
+                                                <div class="box01-2 subBox">
+                                                    <span class="brand">PROJECT M</span>
+                                                    <p class="goods">나일론 풀밴딩 하프팬츠</p>
+                                                    <span class="price">12,900</span>
+                                                </div>
+                                            </div>
+                                            <div class="list012_txt txt">
+                                                <p class="goods_text">나일론 풀밴딩 하프팬츠</p>
+                                                <div class="price_info">
+                                                    <strong class="price">12,900</strong>
+                                                    <del>39,900</del>
+                                                    <strong class="discount">67%</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list02 box07 box01">
+                                        <img src="img/list02_img.jpg" alt="">
+                                        <div class="box07-1 subBox01">
+                                            <span class="brand">PROJECT M</span>
+                                            <p class="goods">카바나 오픈칼라 반팔 셔츠</p>
+                                            <span class="price">16,900</span>
+                                        </div>
+                                    </div>
+                                </div>
+                        </li>
+                        <li>
+                            <div class="btn">2 티셔츠
+                                <div id="tab2" class="cont">
+                                    <div class="list01">
+                                        <div class="list011">
+                                            <div class="list011_img img box03 box">
+                                                <img src="img/list011_1_img.jpg" alt="">
+                                                <div class="box03-1 subBox">
+                                                    <span class="brand">POLHAM KIDS</span>
+                                                    <p class="goods">공용 오가닉 솔리드 반팔 티셔츠</p>
+                                                    <span class="price">3,900</span>
+                                                </div>
+                                            </div>
+                                            <div class="list011_txt txt">
+                                                <p class="goods_text">공용 오가닉 솔리드 반팔 티셔츠</p>
+                                                <div class="price_info">
+                                                    <strong class="price">3,900</strong>
+                                                    <del>9,900</del>
+                                                    <strong class="discount">60%</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list012">
+                                            <div class="list012_img img box04 box">
+                                                <img src="img/list011_2_img.jpg" alt="">
+                                                <div class="box04-1 subBox">
+                                                    <span class="brand">POLHAM KIDS</span>
+                                                    <p class="goods">공용 오가닉 코튼
+                                                        반팔 티</p>
+                                                    <span class="price">3,900</span>
+                                                </div>
+                                            </div>
+                                            <div class="list012_txt txt">
+                                                <p class="goods_text">공용 오가닉 코튼 반팔티</p>
+                                                <div class="price_info">
+                                                    <strong class="price">3,900</strong>
+                                                    <del>9,900</del>
+                                                    <strong class="discount">60%</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list02 box08 box01">
+                                        <img src="img/list02_1_img.jpg" alt="">
+                                        <div class="box08-1 subBox01">
+                                            <span class="brand">PROJECT M</span>
+                                            <p class="goods">카바나 오픈칼라 반팔 셔츠</p>
+                                            <span class="price">16,900</span>
+                                        </div>
+                                    </div>
+                                </div>
+                        </li>
+                        <li>
+                            <div class="btn">3 COOL AIR
+                                <div id="tab3" class="cont">
+                                    <div class="list01">
+                                        <div class="list011">
+                                            <div class="list011_img img box05 box">
+                                                <img src="img/list011_3_img.jpg" alt="">
+                                                <div class="box05-1 subBox">
+                                                    <span class="brand">TOPTEN10</span>
+                                                    <p class="goods">여성) 쿨에어 캐미솔</p>
+                                                    <span class="price">8,900</span>
+                                                </div>
+                                            </div>
+                                            <div class="list011_txt txt">
+                                                <p class="goods_text">여성) 쿨에어 캐미솔</p>
+                                                <div class="price_info">
+                                                    <strong class="price">8,900</strong>
+                                                    <del>12,900</del>
+                                                    <strong class="discount">31%</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list012">
+                                            <div class="list012_img img box06 box">
+                                                <img src="img/list011_4_img.jpg" alt="">
+                                                <div class="box06-1 subBox">
+                                                    <span class="brand">TOPTEN 10</span>
+                                                    <p class="goods">여성) 쿨에어 속바지</p>
+                                                    <span class="price">8,900</span>
+                                                </div>
+                                            </div>
+                                            <div class="list012_txt txt">
+                                                <p class="goods_text">여성) 쿨에어 속바지</p>
+                                                <div class="price_info">
+                                                    <strong class="price">8,900</strong>
+                                                    <del>12,900</del>
+                                                    <strong class="discount">31%</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list02 box09 box01">
+                                        <img src="img/list02_2_img.jpg" alt="">
+                                        <div class="box09-1 subBox01">
+                                            <span class="brand">PROJECT M</span>
+                                            <p class="goods">카바나 오픈칼라 반팔 셔츠</p>
+                                            <span class="price">16,900</span>
+                                        </div>
+                                    </div>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="recommend_style">
+            <div class="title">
+                <h2>MD가 추천하는 스타일</h2>
+            </div>
+            <input type="radio" id="tab01" name="radio" checked>
+            <input type="radio" id="tab02" name="radio">
+            <input type="radio" id="tab03" name="radio">
+            <input type="radio" id="tab04" name="radio">
+            <div class="recommend_style_btn label">
+                <label for="tab01" class="recommend_style_btn01">#다 모아 BAG</label>
+                <label for="tab02" class="recommend_style_btn02">#애플워치 스트랩</label>
+                <label for="tab03" class="recommend_style_btn03">#언더웨어 라인</label>
+                <label for="tab04" class="recommend_style_btn04">#그래픽 티셔츠</label>
+            </div>
+
+
+            <div class="sheet">
+                <div class="sheet01">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <a href="#">
+                                        <div class="recommend_style_img01 img">
+                                            <img src="img/recommend_style_img01.jpg" alt="">
+                                        </div>
+                                        <div class="recommend_style_txt01 txt">
+                                            <span class="text">[아이찜] 워터프루프 투라인 백팩 </span>
+                                            <div class="priceinfo">
+                                                <span class="price">36,750</span>
+                                                <span class="sale_price">49,000</span>
+                                                <span class="sale_percent">25%</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <a href="#">
+                                        <div class="recommend_style_img01 img">
+                                            <img src="img/recommend_style_img02.jpg" alt="">
+                                        </div>
+                                        <div class="recommend_style_txt01 txt">
+                                            <span class="text">[아이찜] 워터프루프 투라인 백팩 </span>
+                                            <div class="priceinfo">
+                                                <span class="price">36,750</span>
+                                                <span class="sale_price">49,000</span>
+                                                <span class="sale_percent">25%</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <a href="#">
+                                        <div class="recommend_style_img01 img">
+                                            <img src="img/recommend_style_img03.jpg" alt="">
+                                        </div>
+                                        <div class="recommend_style_txt01 txt">
+                                            <span class="text">[아이찜] 3M포인트 트렌디 백팩 </span>
+                                            <div class="priceinfo">
+                                                <span class="price">44,250</span>
+                                                <span class="sale_price">59,000</span>
+                                                <span class="sale_percent">25%</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <a href="#">
+                                        <div class="recommend_style_img01 img">
+                                            <img src="img/recommend_style_img04.jpg" alt="">
+                                        </div>
+                                        <div class="recommend_style_txt01 txt">
+                                            <span class="text">[아이찜] 바텍 트렌디 백팩 </span>
+                                            <div class="priceinfo">
+                                                <span class="price">51,750</span>
+                                                <span class="sale_price">69,000</span>
+                                                <span class="sale_percent">25%</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <a href="#">
+                                        <div class="recommend_style_img01 img">
+                                            <img src="img/recommend_style_img05.jpg" alt="">
+                                        </div>
+                                        <div class="recommend_style_txt01 txt">
+                                            <span class="text">[아이찜] 스트릿 빅 백팩 </span>
+                                            <div class="priceinfo">
+                                                <span class="price">51,750</span>
+                                                <span class="sale_price">69,000</span>
+                                                <span class="sale_percent">25%</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <a href="#">
+                                        <div class="recommend_style_img01 img">
+                                            <img src="img/recommend_style_img06.jpg" alt="">
+                                        </div>
+                                        <div class="recommend_style_txt01 txt">
+                                            <span class="text">[베이직엘르] 미니멀리즘 백팩 </span>
+                                            <div class="priceinfo">
+                                                <span class="price">48,750</span>
+                                                <span class="sale_price">65,000</span>
+                                                <span class="sale_percent">25%</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="sheet02">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <div class="recommend_style_img01 img">
+                                        <img src="img/recommend_style_img011.jpg" alt="">
+                                    </div>
+                                    <div class="recommend_style_txt01 txt">
+                                        <a href="#">
+                                            <span class="text">[에가든] 애플워치 소프트 실리콘 밴드 </span>
+                                            <div class="priceinfo">
+                                                <span class="price">8,900</span>
+                                                <span class="sale_price">10,500</span>
+                                                <span class="sale_percent">15%</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <a href="#">
+                                        <div class="recommend_style_img01 img">
+                                            <img src="img/recommend_style_img012.jpg" alt="">
+                                        </div>
+                                        <div class="recommend_style_txt01 txt">
+                                            <span class="text">[에가든] 애플워치 소프트 실리콘 밴드</span>
+                                            <div class="priceinfo">
+                                                <span class="price">8,900</span>
+                                                <span class="sale_price">10,500</span>
+                                                <span class="sale_percent">15%</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <a href="#">
+                                        <div class="recommend_style_img01 img">
+                                            <img src="img/recommend_style_img013.jpg" alt="">
+                                        </div>
+                                        <div class="recommend_style_txt01 txt">
+                                            <span class="text">[에가든] 애플워치 루프밴드 버클 스트랩</span>
+                                            <div class="priceinfo">
+                                                <span class="price">17,600</span>
+                                                <span class="sale_price">22,000</span>
+                                                <span class="sale_percent">20%</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <a href="#">
+                                        <div class="recommend_style_img01 img">
+                                            <img src="img/recommend_style_img014.jpg" alt="">
+                                        </div>
+                                        <div class="recommend_style_txt01 txt">
+                                            <span class="text">[애가든] 애플워치 루프밴드 버클 스트랩 </span>
+                                            <div class="priceinfo">
+                                                <span class="price">17,600</span>
+                                                <span class="sale_price">22,000</span>
+                                                <span class="sale_percent">20%</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <a href="#">
+                                        <div class="recommend_style_img01 img">
+                                            <img src="img/recommend_style_img015.jpg" alt="">
+                                        </div>
+                                        <div class="recommend_style_txt01 txt">
+                                            <span class="text">[애가든] 애플워치 가죽스트랩 에어</span>
+                                            <div class="priceinfo">
+                                                <span class="price">35,700</span>
+                                                <span class="sale_price">42,000</span>
+                                                <span class="sale_percent">15%</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <a href="#">
+                                        <div class="recommend_style_img01 img">
+                                            <img src="img/recommend_style_img016.jpg" alt="">
+                                        </div>
+                                        <div class="recommend_style_txt01 txt">
+                                            <span class="text">[에가든] 애플워치 소프트 실리콘 밴드 </span>
+                                            <div class="priceinfo">
+                                                <span class="price">8,900</span>
+                                                <span class="sale_price">10,500</span>
+                                                <span class="sale_percent">15%</span>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="sheet03">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <div class="recommend_style_img01 img">
+                                        <img src="img/recommend_style_img021.jpg" alt="">
+                                    </div>
+                                    <div class="recommend_style_txt01 txt">
+                                        <span class="text">여성) BALANCE 심리스 브리프</span>
+                                        <div class="priceinfo">
+                                            <span class="price">6,900</span>
+                                            <span class="sale_price">7,000</span>
+                                            <span class="sale_percent">12%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <div class="recommend_style_img01 img">
+                                        <img src="img/recommend_style_img022.jpg" alt="">
+                                    </div>
+                                    <div class="recommend_style_txt01 txt">
+                                        <span class="text">여성) BALANCE 심리스 브리프 </span>
+                                        <div class="priceinfo">
+                                            <span class="price">6,900</span>
+                                            <span class="sale_price">7,900</span>
+                                            <span class="sale_percent">12%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <div class="recommend_style_img01 img">
+                                        <img src="img/recommend_style_img023.jpg" alt="">
+                                    </div>
+                                    <div class="recommend_style_txt01 txt">
+                                        <span class="text">여성) BALANCE 코튼 브리프 (3Pack) </span>
+                                        <div class="priceinfo">
+                                            <span class="price">9,900</span>
+                                            <span class="sale_price">15,900</span>
+                                            <span class="sale_percent">37%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <div class="recommend_style_img01 img">
+                                        <img src="img/recommend_style_img024.jpg" alt="">
+                                    </div>
+                                    <div class="recommend_style_txt01 txt">
+                                        <span class="text">남성) BALANCE 퍼포먼스 복서 브리프 </span>
+                                        <div class="priceinfo">
+                                            <span class="price">6,900</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <div class="recommend_style_img01 img">
+                                        <img src="img/recommend_style_img025.jpg" alt="">
+                                    </div>
+                                    <div class="recommend_style_txt01 txt">
+                                        <span class="text">남성) BALANCE 퍼포먼스 복서 브리프 </span>
+                                        <div class="priceinfo">
+                                            <span class="price">6,900</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <div class="recommend_style_img01 img">
+                                        <img src="img/recommend_style_img026.jpg" alt="">
+                                    </div>
+                                    <div class="recommend_style_txt01 txt">
+                                        <span class="text">남성) BALANCE 퍼포먼스 복서 브리프 </span>
+                                        <div class="priceinfo">
+                                            <span class="price">6,900</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="sheet04">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <div class="recommend_style_img01 img">
+                                        <img src="img/recommend_style_img031.jpg" alt="">
+                                    </div>
+                                    <div class="recommend_style_txt01 txt">
+                                        <span class="text">공용) 코튼 그래픽 반팔티 </span>
+                                        <div class="priceinfo">
+                                            <span class="price">3,900</span>
+                                            <span class="sale_price">19,900</span>
+                                            <span class="sale_percent">80%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <div class="recommend_style_img01 img">
+                                        <img src="img/recommend_style_img032.jpg" alt="">
+                                    </div>
+                                    <div class="recommend_style_txt01 txt">
+                                        <span class="text">그래픽 반팔티 </span>
+                                        <div class="priceinfo">
+                                            <span class="price">23,940</span>
+                                            <span class="sale_price">39,900</span>
+                                            <span class="sale_percent">40%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <div class="recommend_style_img01 img">
+                                        <img src="img/recommend_style_img033.jpg" alt="">
+                                    </div>
+                                    <div class="recommend_style_txt01 txt">
+                                        <span class="text">공용) USA 코튼 그래픽 반팔 티 </span>
+                                        <div class="priceinfo">
+                                            <span class="price">3,900</span>
+                                            <span class="sale_price">19,900</span>
+                                            <span class="sale_percent">80%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <div class="recommend_style_img01 img">
+                                        <img src="img/recommend_style_img034.jpg" alt="">
+                                    </div>
+                                    <div class="recommend_style_txt01 txt">
+                                        <span class="text">여성) 코튼 반팔 그래픽 티(더투어) </span>
+                                        <div class="priceinfo">
+                                            <span class="price">9,900</span>
+                                            <span class="sale_price">29,900</span>
+                                            <span class="sale_percent">66%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <div class="recommend_style_img01 img">
+                                        <img src="img/recommend_style_img035.jpg" alt="">
+                                    </div>
+                                    <div class="recommend_style_txt01 txt">
+                                        <span class="text">USA 코튼 시즌 그래픽 티셔츠</span>
+                                        <div class="priceinfo">
+                                            <span class="price">8,900</span>
+                                            <span class="sale_price">59,000</span>
+                                            <span class="sale_percent">84%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend_style01">
+                                    <div class="recommend_style_img01 img">
+                                        <img src="img/recommend_style_img06.jpg" alt="">
+                                    </div>
+                                    <div class="recommend_style_txt01 txt">
+                                        <span class="text">여성) 소로나 그래픽 반팔 티셔츠 </span>
+                                        <div class="priceinfo">
+                                            <span class="price">8,900</span>
+                                            <span class="sale_price">39,900</span>
+                                            <span class="sale_percent">77%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #스트리트 캐주얼</div>
+                <div class="recommend_style_btn03">#언더웨어 라인</div>
+                <div class="recommend_style_btn04">#버킷 햇</div> -->
+
+
+        </section>
+
+
+
+
+
+        <section class="season_concept">
+            <div class="title">
+                <h2>SEASON CONCEPT</h2>
+            </div>
+            <div class="season_concept_movie">
+                <iframe width="1200" height="675" src="https://www.youtube.com/embed/7a-sug-yr20"
+                    title="또 다른 나를 찾는 쇼핑, ㅌㅌ#(30s full ver.)" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+    </div>
+
+    <div class="footerWrap">
+        <footer class="footer">
+            <div class="footer_top">
+                <ul>
+                    <li><a href="#">매장안내</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li class="bold"><a href="#">개인정보처리방침</a></li>
+                </ul>
+                <select name="add_name" id="add_name">
+                    <option value="">---포털 사이트---</option>
+                    <option value="http://www.naver.com">네이버</option>
+                    <option value="http://www.daum.net">다음</option>
+                    <option value="http://www.nate.com">네이트</option>
+                    <option value="http://www.google.co.kr">구글</option>
+                </select>
+
+            </div>
+            <div class="footer_bottom">
+                <div class="footer_bottom_left">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+
+                    <div class="footer_col">
+                        <div class="footer_col_01">
+                            <div class="footer_col_01_top">
+                                신성통상(주) / 대표자 : 황대규<br>
+                                주소 : 서울 강동구 풍성로63길 84 신성빌딩 / 대표전화 : 1600 - 3424<br>
+                                통신판매업 신고번호 : 2015-서울강동-1890
+                            </div>
+                            <div class="footer_col_01_bottom">
+                                © 2018 TOPTEN MALL. ALL RIGHTS RESERVED
+                            </div>
+                        </div>
+                        <div class="footer_col_02">
+                            <div class="footer_col_02_top">
+                                <span>사업자등록번호 104-81-01106</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="#">사업자 정보확인</a>
+                            </div>
+                            <div class="footer_col_02_bottom">
+                                <img src="img/btn_usafe.png" alt="">
+                                채무지급보증안내
+                                <a href="#">서비스가입사실확인</a>
+                            </div>
+                            <dl class="sns">
+                                <dd class="facebook">
+                                    <a href="http://www.facebook.com">FACEBOOK</a>
+                                </dd>
+                                <dd class="instagram">
+                                    <a href="http://www.instagram.com">INSTAGRAM</a>
+                                </dd>
+                                <dd class="youtube">
+                                    <a href="http://www.youtube.com">YOUTUBE</a>
+                                </dd>
+
+                            </dl>
+                        </div>
+
+                        <div class="footer_col_03">
+                            <p>상담업무시간 | 전화상담 : 10:00~17:30 / 전화상담 외 : 09:00 ~ 17:30<br>
+                                점심시간 : 12:00~13:00 (주말 및 공휴일 휴무)<br>
+                                물류반품 주소 : 경기 양주시 평화로 1837 탑텐몰 덕정물류센터 3층 반품검수팀<br>
+                                E-mail 주소 : topten10mallcs@ssts.co.kr<br>
+                                Fax 번호 : 070-5176-8407</p]>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </div>
+
+    <div class="top_btn">
+        <i class="xi-arrow-up"></i>
+    </div>
+
+
+    <div class="popup">
+        <div class="title">
+            <h1>배송 불가 안내</h1>
+        </div>
+        <div class="txt">
+            <p class="txt01">
+                한진택배 강동지역 긴급 파업으로 인한<br>
+                배송 불가 지역 안내
+            </p>
+            <div class="txt02">강동고덕/천호</div>
+            <p class="txt03">
+                해당 지역 주문 시 환불 처리 됩니다.<br>
+                주문 시 참고하여 주시기 바랍니다.<br>
+                불편을 드려 죄송합니다.
+            </p>
+        </div>
+        <button class="close_btn">닫기</button>
+    </div>
+
+
+
+
+</body>
+
+</html>
