@@ -136,10 +136,10 @@ body {
   box-sizing: border-box;
   background-color: white;
   display: none;
-  z-index: 9999;
+  z-index: 3;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 30px;
 }
 
 .search_detail > div {
@@ -176,10 +176,11 @@ body {
   margin: 5px 20px;
 }
 
-.closeBtn {
+.search_detail .closeBtn {
   position: absolute;
   right: -260px;
   bottom: -10px;
+  cursor: pointer;
 }
 
 .lnb {
@@ -377,6 +378,10 @@ body {
   padding: 30px;
 }
 
+.main_recomm .swiper-wrapper {
+  height: 470px;
+}
+
 .swiper-slide {
   height: 410px;
 }
@@ -453,6 +458,9 @@ body {
 .main_recomm .swiper-button-next,
 .main_recomm .swiper-button-prev {
   transform: translateY(-50px);
+}
+
+.main_recomm .swiper-pagination {
 }
 
 /*--------------------main_recomm------------------*/
@@ -575,9 +583,13 @@ body {
 /*--------------------recomment_style------------------*/
 
 .recommend_style {
-  height: 700px;
+  height: 650px;
   background-color: #f5f5f5;
   margin-top: 70px;
+}
+
+.recommend_style .swiper-wrapper {
+  height: 460px;
 }
 
 .recommend_style .title {
@@ -770,6 +782,10 @@ body {
   transform: translateY(-50px);
 }
 
+.recommend_style .swiper-pagination {
+  transform: translateY();
+}
+
 /*--------------------recomment_style------------------*/
 
 /*--------------------season_concept------------------*/
@@ -940,7 +956,7 @@ body {
   top: 300px;
   left: 200px;
   border: 2px solid #ddd;
-  z-index: 999;
+  z-index: 2;
 }
 
 .popup .title {
